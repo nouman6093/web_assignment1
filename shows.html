@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/office/40/film-reel--v1.png" alt="film-reel--v1">
+    <title>Tv Shows</title>
+    <style>
+        body {
+            background-color: beige;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        .navbar {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 60px;
+        }
+        .navbar a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #f2f2f2;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .footer {
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+        }
+        .footer .contact_us {
+            color: #f2f2f2;
+            padding: 1% 4%;
+        }
+        .footer .contact_us .email {
+            display: flex;
+        }
+        .footer .contact_us img {
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+        .footer .contact_us .phone {
+            display: flex;
+        }
+        .footer #contact-me {
+            display: flex;
+        }
+        .footer .social {
+            color: #f2f2f2;
+            padding-left: 60%;
+            padding-top: 40px;
+        }
+        .carousel-inner img {
+            height: 10%;
+        }
+        .slide {
+            width: 20%; /* Adjust according to the number of images */
+            transition: transform 1s ease;
+            display: flex;
+        }
+
+        .slide img {
+            height: 500px;
+            display: block;
+            padding-left: 20%;
+            padding-top: 3%;
+
+        }
+        .iframe {
+            padding-left: 5%;
+            width: 1000px;
+            padding-top: 2%;
+            border: none;
+        }
+        .slides {
+            display: flex;
+            width: 600%; /* Total width based on number of slides */
+            transition: transform 1s ease;
+        }
+        .section-1 {
+            background-image: url('https://images.unsplash.com/photo-1605034949929-6af5f19593b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        /* Optional: Darken the background for better contrast */
+        .section-1::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+            z-index: -1; /* Make sure it stays behind the content */
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="shows.html">TV Shows</a>
+    <a href="games.html">Games</a>
+</div>
+
+<div class = "section-1" style="background-color: beige;">
+    <div style="display: flex; justify-content: center; padding-top: 1%"><h1 style="color: white">My Favorite TV Shows</h1></div>
+    <div class = "slider" style = "width: 100%; overflow: hidden; position: relative;">
+        <div class = "slides">
+            <div class = "slide"><img src = "https://i.pinimg.com/564x/f8/84/36/f88436473c01750681146e64bc49189e.jpg" alt="Game of Thrones"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Game_of_Thrones" title="Wikipedia Page for Game of Thrones"></iframe></div>
+            <div class = "slide"><img src = "https://i.pinimg.com/564x/99/2b/e5/992be501d73a1862304c41d68ba57a73.jpg" alt="Chernobyl"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Chernobyl_(miniseries)" title="Wikipedia Page for Chernobyl"></iframe></div>
+            <div class = "slide"><img src = "https://i.pinimg.com/736x/82/73/6c/82736c03ddf690c49e581c6a64637356.jpg" alt="Better Call Saul"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Better_Call_Saul" title="Wikipedia Page for Better Call Saul"></iframe></div>
+            <div class = "slide"><img src = "https://i.pinimg.com/564x/01/35/4f/01354f497da0565a8e08f4e4bdc523e2.jpg" alt="Narcos"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Narcos" title="Wikipedia Page for Narcos"></iframe></div>
+            <div class = "slide"><img src = "https://i.pinimg.com/564x/fc/3a/6a/fc3a6a48e5875671dc6b604528f1287f.jpg" alt="Vikings"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Vikings_(TV_series)" title="Wikipedia Page for Vikings"></iframe></div>
+            <div class = "slide"><img src = "https://i.pinimg.com/564x/c0/49/f5/c049f559791237fde7329b0d1113a2cd.jpg" alt="The Boys"><iframe class="iframe" src="https://en.wikipedia.org/wiki/The_Boys_(TV_series)" title="Wikipedia Page for The Boys"></iframe></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="contact_us">
+        <p id="contact-me"><h2>Contact Me:</h2></p>
+        <div class="email"><p>hameednouman12@gmail.com</p><img src="https://cdn-icons-png.freepik.com/256/10505/10505490.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="40"></div>
+        <div class="phone"><p>123456789</p><img src="https://cdn-icons-png.freepik.com/256/724/724664.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30"></div>
+    </div>
+    <div class="social">
+        <p><h2>Social:</h2></p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/noumanhoonmain/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+            <a href="https://www.linkedin.com/in/nouman6093/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/14079/14079318.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+            <a href="https://github.com/nouman6093" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/536/536452.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelector('.slides');
+    const slideCount = document.querySelectorAll('.slide').length;
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount; // Loop back to the first slide
+        slides.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`; // Adjust the translate value
+    }
+
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+</body>
+</html>

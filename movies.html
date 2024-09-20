@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="https://img.icons8.com/office/40/film-reel--v1.png" alt="film-reel--v1">
+  <title>Movies</title>
+  <style>
+    body {
+      background-color: beige;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .navbar {
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 60px;
+    }
+    .navbar a {
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #f2f2f2;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .footer {
+      background-color: #333;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+    }
+    .footer .contact_us {
+      color: #f2f2f2;
+      padding: 1% 4%;
+    }
+    .footer .contact_us .email {
+      display: flex;
+    }
+    .footer .contact_us img {
+      padding-left: 10px;
+      padding-top: 5px;
+    }
+    .footer .contact_us .phone {
+      display: flex;
+    }
+    .footer #contact-me {
+      display: flex;
+    }
+    .footer .social {
+      color: #f2f2f2;
+      padding-left: 60%;
+      padding-top: 40px;
+    }
+    .carousel-inner img {
+      height: 10%;
+    }
+    .slide {
+      width: 20%; /* Adjust according to the number of images */
+      transition: transform 1s ease;
+      display: flex;
+    }
+
+    .slide img {
+      height: 500px;
+      display: block;
+      padding-left: 20%;
+      padding-top: 3%;
+
+    }
+    .iframe {
+      padding-left: 5%;
+      width: 1000px;
+      padding-top: 2%;
+      border: none;
+    }
+    .slides {
+      display: flex;
+      width: 500%; /* Total width based on number of slides */
+      transition: transform 1s ease;
+    }
+    .section-1 {
+      background-image: url('https://images.unsplash.com/photo-1485095329183-d0797cdc5676?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
+    }
+    /* Optional: Darken the background for better contrast */
+    .section-1::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Add a dark overlay */
+      z-index: -1; /* Make sure it stays behind the content */
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="movies.html">Movies</a>
+  <a href="shows.html">TV Shows</a>
+  <a href="games.html">Games</a>
+</div>
+
+<div class = "section-1" style="background-color: beige;">
+  <div style="display: flex; justify-content: center; padding-top: 1%"><h1 style="color: white">My Favorite Movies</h1></div>
+  <div class = "slider" style = "width: 100%; overflow: hidden; position: relative;">
+    <div class = "slides">
+      <div class = "slide"><img src = "https://i.pinimg.com/564x/04/9e/a6/049ea6be5795a203b34e4490198c9624.jpg" alt="The Godfather"><iframe class="iframe" src="https://en.wikipedia.org/wiki/The_Godfather" title="Wikipedia Page for The Godfather"></iframe></div>
+      <div class = "slide"><img src = "https://i.pinimg.com/564x/3d/28/a8/3d28a8c719eea1a555ddb6e64664a4df.jpg" alt="The Dark Knight"><iframe class="iframe" src="https://en.wikipedia.org/wiki/The_Dark_Knight" title="Wikipedia Page for The Dark Knight"></iframe></div>
+      <div class = "slide"><img src = "https://i.pinimg.com/564x/c3/3d/28/c33d2809d832000e11a098f91e6bdc87.jpg" alt="Alien"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Alien_(film)" title="Wikipedia Page for Alien"></iframe></div>
+      <div class = "slide"><img src = "https://i.pinimg.com/564x/83/bc/cd/83bccd428e171766fc3a5fdee256023d.jpg" alt="Gladiator"><iframe class="iframe" src="https://en.wikipedia.org/wiki/Gladiator_(2000_film)" title="Wikipedia Page for Gladiator"></iframe></div>
+      <div class = "slide"><img src = "https://i.pinimg.com/736x/00/a9/5b/00a95b74ed3b3d72e56ea3a72fdf1f41.jpg" alt="2001: A Space Odyssey"><iframe class="iframe" src="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey" title="Wikipedia Page for 2001: A Space Odyssey"></iframe></div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="contact_us">
+    <p id="contact-me"><h2>Contact Me:</h2></p>
+    <div class="email"><p>hameednouman12@gmail.com</p><img src="https://cdn-icons-png.freepik.com/256/10505/10505490.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="40"></div>
+    <div class="phone"><p>123456789</p><img src="https://cdn-icons-png.freepik.com/256/724/724664.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30"></div>
+  </div>
+  <div class="social">
+    <p><h2>Social:</h2></p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/noumanhoonmain/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/2111/2111463.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+      <a href="https://www.linkedin.com/in/nouman6093/" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/14079/14079318.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+      <a href="https://github.com/nouman6093" target="_blank"><img src="https://cdn-icons-png.freepik.com/256/536/536452.png?uid=R29399475&ga=GA1.1.1242283467.1726509738&semt=ais_hybrid" height="30px"></a>
+    </div>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  const slides = document.querySelector('.slides');
+  const slideCount = document.querySelectorAll('.slide').length;
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideCount; // Loop back to the first slide
+    slides.style.transform = `translateX(-${(currentIndex * 100) / slideCount}%)`; // Adjust the translate value
+  }
+
+  setInterval(nextSlide, 3000); // Change slide every 3 seconds
+</script>
+
+</body>
+</html>
